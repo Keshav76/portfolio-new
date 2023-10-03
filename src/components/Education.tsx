@@ -3,45 +3,11 @@ import {
   VerticalTimelineElement,
   VerticalTimeline,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
 
-import { fadeIn, textVariant } from "../utils/motion";
+import { educations } from "../constants";
 import SectionWrapper from "../utils/SectionWrapper";
-import { sas, srm } from "../assets";
-
-const educations = [
-  {
-    degree: "Bachelor of Technology",
-    institute: "SRM Institute of Science and Technology",
-    icon: srm,
-    iconBg: "#fff",
-    date: "Jun 2020 - Present",
-    points: ["CGPA: 9.82 / 10", "Major in Computer Science and Engineering"],
-  },
-  {
-    degree: "12th Standard",
-    institute: "St. Anthony's Sr. Sec. School",
-    icon: sas,
-    iconBg: "#fff",
-    date: "2019 - 2020",
-    points: [
-      "Scored 93% in the CBSE Board Examinations",
-      "Major Subjects: Physics, Chemistry, Mathematics, Computer Science, English",
-    ],
-  },
-  {
-    degree: "10th Standard",
-    institute: "St. Anthony's Sr. Sec. School",
-    icon: sas,
-    iconBg: "#fff",
-    date: "2017 - 2018",
-    points: [
-      "Scored 86.8% in the CBSE Board Examinations",
-      "Major Subjects: Mathematics, Science, Computer Science, English, Social Studies, Hindi",
-    ],
-  },
-];
+import { fadeIn, textVariant } from "../utils/motion";
 
 const EducationCard = ({
   education,

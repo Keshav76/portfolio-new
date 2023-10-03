@@ -1,4 +1,7 @@
+import { motion } from "framer-motion";
 import Computer from "./Computer";
+import { slideIn } from "../utils/motion";
+import SectionWrapper from "../utils/SectionWrapper";
 
 const Main = () => {
   return (
@@ -7,7 +10,10 @@ const Main = () => {
       className="relative w-full h-[calc(100vh-48px)] bg-[url('./src/assets/herobg.png')] bg-cover bg-no-repeat"
     >
       {/* Name */}
-      <div className="flex px-10 md:py-10 py-4 gap-4">
+      <motion.div
+        variants={slideIn("left", "tween", 0.5, 1)}
+        className="flex px-10 md:py-10 py-4 gap-4"
+      >
         <div className="flex flex-col items-center">
           <div className="rounded-full h-4 w-4 bg-shiny"></div>
           <div className="h-40 w-[3px] violet-gradient"></div>
@@ -24,7 +30,7 @@ const Main = () => {
             I am a Full Stack Web Developer
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Computer */}
       <div className="absolute w-full h-full top-0">
@@ -33,7 +39,7 @@ const Main = () => {
       <div className="absolute w-full bottom-2 flex justify-center items-center">
         <a href="#about">
           <div className="h-12 w-6 rounded-full border-white border-2 py-1 flex justify-center">
-            <div className="w-3 h-3 bg-white rounded-full  animate-[updown_1s_ease-in-out_0s_infinite_alternate]"></div>
+            <div className="w-3 h-3 bg-white rounded-full  animate-[updown_500ms_ease-in-out_0s_infinite_alternate]"></div>
           </div>
         </a>
       </div>
@@ -41,4 +47,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default SectionWrapper(Main);

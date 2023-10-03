@@ -53,9 +53,6 @@ const EarthCanvas = () => {
 };
 
 const Contact = () => {
-  // _tjbpI5poYVjrElfN
-  // template_eb66l5l
-  // service_bttsd3p
   const [form, setForm] = useState({
     name: "",
     email: "",

@@ -3,48 +3,11 @@ import {
   VerticalTimelineElement,
   VerticalTimeline,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
 
-import { fadeIn, textVariant } from "../utils/motion";
+import { experiences } from "../constants";
 import SectionWrapper from "../utils/SectionWrapper";
-import { bhc, iitg, karo } from "../assets";
-
-const experiences = [
-  {
-    title: "Summer Intern",
-    company: "CSE Dept. IIT Guwahati",
-    icon: iitg,
-    iconBg: "#fff",
-    date: "Jun 2023 - Jul 2023",
-    points: [
-      "Analyzed the use of Domain-Specific Accelerators for Deep Neural Networks",
-      "Developed mapping for chip architectures for different neural networks.",
-    ],
-  },
-  {
-    title: "Web Developement Intern",
-    company: "Bridge Healthcare - IIT Madras",
-    icon: bhc,
-    iconBg: "#fff",
-    date: "Dec 2022 - Feb 2023",
-    points: [
-      "Built the Patient Web Application along with a team of 5 members.",
-      "ReactJS, Material UI, and Figma for creating the UI of the webpage.",
-    ],
-  },
-  {
-    title: "Web Developer Intern",
-    company: "Karo Startup India Pvt. Ltd.",
-    icon: karo,
-    iconBg: "#fff",
-    date: "Mar 2022 - Apr 2022",
-    points: [
-      "Worked with the front-end team to build the student ambassador website",
-      "Built the website using ReactJS and Bootstrap",
-    ],
-  },
-];
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ExperienceCard = ({
   experience,

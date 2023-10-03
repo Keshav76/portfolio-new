@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 import { userImg } from "../assets";
+import SectionWrapper from "../utils/SectionWrapper";
 
 const NavLinks = () => {
   return (
@@ -32,9 +33,9 @@ const NavLinks = () => {
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="w-full py-3 sticky z-20 bg-bg top-0 flex px-6 sm:px-14 items-center justify-between">
+    <div className="w-full py-3 sticky z-20 bg-bg up-0 flex px-6 sm:px-14 items-center justify-between">
       <div className="flex items-center gap-2">
-        <img src={userImg} alt="KB" className="h-6 w-14 rounded-full" />
+        <img src={userImg} alt="KB" className="w-8" />
         Keshav Banka
       </div>
       <div className="md:flex gap-4 hidden">
@@ -48,7 +49,7 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } flex-col gap-2 px-4 py-2 absolute x-20 bg-shiny text-white  top-8 left-[-100px] rounded-lg`}
+          } flex-col gap-2 px-4 py-2 absolute x-20 bg-shiny text-white  up-8 left-[-100px] rounded-lg`}
         >
           <NavLinks />
         </div>
@@ -57,4 +58,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SectionWrapper(Navbar);

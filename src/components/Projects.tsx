@@ -1,57 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrapper from "../utils/SectionWrapper";
-// import { projects } from "../constants";
+import { projects } from "../constants";
 
-import { yt, portfolio, ide, india, interview, dark } from "../assets";
 import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
-const projects = [
-  {
-    title: "Portfolio",
-    description: "My personal portfolio website built with React and Three.Js",
-    githubLink: "#",
-    liveDemoLink: "#",
-    image: portfolio,
-  },
-  {
-    title: "Youtube Clone",
-    description: "A Youtube clone built with React and Youtube Data API",
-    githubLink: "#",
-    liveDemoLink: "#",
-    image: yt,
-  },
-  {
-    title: "Online IDE",
-    description: "An online IDE built with React, Node, Express, and MongoDB",
-    githubLink: "#",
-    liveDemoLink: "#",
-    image: ide,
-  },
-  {
-    title: "Incredible India",
-    description: "A website for tourism in India built with React",
-    githubLink: "#",
-    liveDemoLink: "#",
-    image: india,
-  },
-  {
-    title: "Interview Allotment System",
-    description: "A website for allotment of interview slots built with PHP",
-    githubLink: "https://github.com/Keshav76/Interview-Alottment-Site",
-    liveDemoLink: "",
-    image: interview,
-  },
-  {
-    title: "Dark Mode Chrome Extension",
-    description: "A chrome extension for dark mode built with Javascript",
-    githubLink: "https://github.com/Keshav76/Dark-Mode-Chrome-Extension",
-    liveDemoLink: "",
-    image: dark,
-  },
-];
 
 type Props = {
   project: {
@@ -96,6 +50,7 @@ const ProjectCard = ({ project, index }: Props) => {
         <div className="text-white-100 max-w-xs">{project.description}</div>
         <div className="mt-5">
           <a
+            target="_blank"
             href={project.githubLink}
             className="rounded-lg mx-5 border bg-[rgb(255,255,255,0.10)] border-white px-2 py-1"
           >
@@ -103,6 +58,7 @@ const ProjectCard = ({ project, index }: Props) => {
           </a>
           {project.liveDemoLink !== "" && (
             <a
+              target="_blank"
               href={project.liveDemoLink}
               className="rounded-lg mx-5 border bg-[rgb(255,255,255,0.10)] border-white px-2 py-1"
             >

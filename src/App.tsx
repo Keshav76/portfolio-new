@@ -11,7 +11,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="bg-bg text-zinc h-screen w-screen overflow-y-scroll overflow-x-hidden scrollbar-none scroll-pt-12">
+    <div className="select-none bg-bg text-zinc h-screen w-screen overflow-y-scroll overflow-x-hidden scrollbar-none scroll-pt-12">
       <Navbar />
       <Main />
       <About />

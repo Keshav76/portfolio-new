@@ -1,48 +1,7 @@
-import {
-  cpp,
-  c,
-  css,
-  bootstrap,
-  express,
-  firebase,
-  git,
-  html,
-  javascript,
-  mongodb,
-  mui,
-  nodejs,
-  python,
-  reactjs,
-  redux,
-  tailwind,
-  tensorflow,
-  typescript,
-} from "../assets";
-
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrapper from "../utils/SectionWrapper";
-
-const skills = [
-  { name: "C", icon: c },
-  { name: "C++", icon: cpp },
-  { name: "Python", icon: python },
-  { name: "Javascript", icon: javascript },
-  { name: "Typescript", icon: typescript },
-  { name: "HTML", icon: html },
-  { name: "CSS", icon: css },
-  { name: "ReactJS", icon: reactjs },
-  { name: "Redux", icon: redux },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "Material UI", icon: mui },
-  { name: "Bootstrap", icon: bootstrap },
-  { name: "NodeJS", icon: nodejs },
-  { name: "ExpressJS", icon: express },
-  { name: "MongoDB", icon: mongodb },
-  { name: "Firebase", icon: firebase },
-  { name: "Git", icon: git },
-  { name: "Tensorflow", icon: tensorflow },
-];
+import { fadeIn, textVariant } from "../utils/motion";
+import { skills } from "../constants";
 
 const Skill = ({
   index,

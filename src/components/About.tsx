@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
-import { mern, frontend, ml, backend } from "../assets";
 import SectionWrapper from "../utils/SectionWrapper";
+import { mainSkills, summary } from "../constants";
 
 const Card = ({
   skill,
@@ -28,16 +28,6 @@ const Card = ({
   );
 };
 
-const mainSkills = [
-  {
-    name: "Full Stack Developement",
-    logo: mern,
-  },
-  { name: "Frontend Developement", logo: frontend },
-  { name: "Backend Developement", logo: backend },
-  { name: "Machine Learning", logo: ml },
-];
-
 const About = () => {
   return (
     <div id="about" className="m-10">
@@ -51,12 +41,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1) as any}
         className="leading-8 mt-4 text-justify"
       >
-        Skilled <u>web developer</u>. Specialized in constructing robust web
-        applications using <u>MERN Stack</u>. Possesses a deep understanding of{" "}
-        <u>Machine Learning</u> and <u>Data Structures</u>. Determined towards
-        Frontend Developement leveraging technology to create impactful
-        solutions. Adept at <u>problem solving</u>. Eager to learn new
-        technologies and tools to enhance my skills.
+        {summary}
       </motion.div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-4 ">
         {mainSkills.map((skill, i) => (
