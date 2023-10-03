@@ -14,9 +14,9 @@ const Card = ({
   return (
     <motion.div
       variants={fadeIn("right", "spring", delay, 0.75) as any}
-      className={` shadow-card grow green-pink-gradient rounded-lg text-white text-center`}
+      className={`hover:brightness-150 shadow-card grow green-pink-gradient rounded-lg text-white text-center`}
     >
-      <div className="hover:shadow-card bg-bg m-[2px] rounded-lg p-5 h-[calc(100%-4px)] text-xl flex flex-col items-center justify-center">
+      <div className="bg-bg m-[2px] rounded-lg p-5 h-[calc(100%-4px)] text-xl flex flex-col items-center justify-center">
         <img
           src={skill.logo}
           alt={skill.name}

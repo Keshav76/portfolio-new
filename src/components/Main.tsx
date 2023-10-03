@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="relative w-full h-[calc(100vh-48px)] bg-[url('./src/assets/herobg.png')] bg-cover bg-no-repeat"
+      className="relative w-full mt-12 h-[calc(100vh-48px)] bg-[url('./src/assets/herobg.png')] bg-cover bg-no-repeat"
     >
       {/* Name */}
       <motion.div

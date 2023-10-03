@@ -17,9 +17,13 @@ const Skill = ({
     <motion.div
       variants={fadeIn("right", "spring", delay, 0.5) as any}
       title={name}
-      className="flex flex-col items-center justify-center aspect-square flex-[0_0_25%] sm:flex-[0_0_16%] md:flex-[0_0_12.5%] lg:flex-[0_0_10%]"
+      className="flex flex-col  items-center justify-center aspect-square flex-[0_0_25%] sm:flex-[0_0_16%] md:flex-[0_0_12.5%] lg:flex-[0_0_10%]"
     >
-      <img src={icon} alt="skill" className="w-3/4" />
+      <img
+        src={icon}
+        alt="skill"
+        className="w-3/4 hover:scale-150 transition-all"
+      />
     </motion.div>
   );
 };

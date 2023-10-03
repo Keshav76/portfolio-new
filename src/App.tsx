@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 };

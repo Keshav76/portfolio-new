@@ -12,6 +12,10 @@ import {
   useGLTF,
   useProgress,
 } from "@react-three/drei";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { leetcode } from "../assets";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Loader = () => {
   const { progress } = useProgress();
@@ -102,6 +106,38 @@ const Contact = () => {
           className="text-white md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"
         >
           Contact Me
+        </motion.div>
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1) as any}
+          className="text-white text-2xl flex gap-4 items-center"
+        >
+          <a
+            target="_blank"
+            href="mailto:keshav.banka2003@gmail.com"
+            title="Mail"
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+          <a target="_blank" href="tel:8004775978" title="Phone">
+            <FontAwesomeIcon icon={faPhone} />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/keshav-banka"
+            title="Linkedin"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a target="_blank" href="https://github.com/Keshav76" title="Github">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a
+            target="_blank"
+            href="https://leetcode.com/keshav-banka/"
+            title="Leetcode"
+          >
+            <img src={leetcode} alt="" className="h-6 invert" />
+          </a>
         </motion.div>
         <motion.form
           onSubmit={handleSubmit}

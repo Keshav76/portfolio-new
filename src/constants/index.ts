@@ -3,8 +3,11 @@ import { sas, srm } from "../assets";
 import { bhc, iitg, karo } from "../assets";
 import {
   cpp,
+  numpy,
+  pandas,
   c,
   css,
+  sql,
   bootstrap,
   express,
   firebase,
@@ -12,7 +15,6 @@ import {
   html,
   javascript,
   mongodb,
-  mui,
   nodejs,
   python,
   reactjs,
@@ -120,41 +122,45 @@ export const skills = [
   { name: "ReactJS", icon: reactjs },
   { name: "Redux", icon: redux },
   { name: "Tailwind CSS", icon: tailwind },
-  { name: "Material UI", icon: mui },
   { name: "Bootstrap", icon: bootstrap },
   { name: "NodeJS", icon: nodejs },
   { name: "ExpressJS", icon: express },
   { name: "MongoDB", icon: mongodb },
+  { name: "SQL", icon: sql },
   { name: "Firebase", icon: firebase },
   { name: "Git", icon: git },
+  { name: "Numpy", icon: numpy },
+  { name: "Pandas", icon: pandas },
   { name: "Tensorflow", icon: tensorflow },
 ];
 
 export const projects = [
   {
     title: "Portfolio",
-    description: "My personal portfolio website built with React and Three.Js",
+    description: "Built with React and Three.Js for 3D animations",
     githubLink: "https://github.com/Keshav76/portfolio-new",
     liveDemoLink: "https://kb-portfolio-two.vercel.app/",
     image: portfolio,
   },
   {
     title: "Youtube Clone",
-    description: "A Youtube clone built with React and Youtube Data API",
+    description:
+      "Built with MERN Stack and Firebase for video storage and authentication",
     githubLink: "https://github.com/Keshav76/youtube-clone",
     liveDemoLink: "https://youtube-9r1a.onrender.com/",
     image: yt,
   },
   {
     title: "Online IDE",
-    description: "An online IDE built with React, Node, Express, and MongoDB",
+    description:
+      "Built with React, with features like syntax highlighting, auto-completion, etc.",
     githubLink: "https://github.com/Keshav76/Frontend-IDE",
     liveDemoLink: "https://keshav76.github.io/Frontend-IDE/",
     image: ide,
   },
   {
     title: "Incredible India",
-    description: "A website for tourism in India built with React",
+    description: "A website for promoting tourism in India",
     githubLink: "https://github.com/Keshav76/Incredible-India",
     liveDemoLink: "https://keshav76.github.io/Incredible-India/",
     image: india,
@@ -162,7 +168,7 @@ export const projects = [
   {
     title: "Interview Allotment System",
     description:
-      "A https://github.com/Keshav76/Incredible-Indiawebsite for allotment of interview slots built with PHP",
+      "To make the interview allotment process easier for the HRs and the students",
     githubLink: "https://github.com/Keshav76/Interview-Alottment-Site",
     liveDemoLink: "",
     image: interview,
