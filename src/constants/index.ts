@@ -23,7 +23,7 @@ import {
   tensorflow,
   typescript,
 } from "../assets";
-import { yt, portfolio, ide, india, interview, dark } from "../assets";
+import { yt, portfolio, ide, india, dark, chat } from "../assets";
 
 export const summary = `Skilled web developer. Specialized in constructing robust web
 applications using MERN Stack. Possesses a deep understanding of
@@ -151,6 +151,14 @@ export const projects = [
     image: yt,
   },
   {
+    title: "Chit-Chat",
+    description:
+      "A secure chat application built with React and Firebase using RSA encryption",
+    githubLink: "https://github.com/Keshav76/chit-chat",
+    liveDemoLink: "https://chit-chat-10qe.onrender.com/",
+    image: chat,
+  },
+  {
     title: "Online IDE",
     description:
       "Built with React, with features like syntax highlighting, auto-completion, etc.",
@@ -164,14 +172,6 @@ export const projects = [
     githubLink: "https://github.com/Keshav76/Incredible-India",
     liveDemoLink: "https://keshav76.github.io/Incredible-India/",
     image: india,
-  },
-  {
-    title: "Interview Allotment System",
-    description:
-      "To make the interview allotment process easier for the HRs and the students",
-    githubLink: "https://github.com/Keshav76/Interview-Alottment-Site",
-    liveDemoLink: "",
-    image: interview,
   },
   {
     title: "Dark Mode Chrome Extension",

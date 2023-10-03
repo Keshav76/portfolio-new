@@ -41,10 +41,12 @@ import portfolio from "./projects/portfolio.png";
 import yt from "./projects/yt.png";
 import india from "./projects/india.png";
 import dark from "./projects/dark.png";
+import chat from "./projects/chat.png";
 import interview from "./projects/interview.png";
 
 export {
   ide,
+  chat,
   pandas,
   interview,
   sql,

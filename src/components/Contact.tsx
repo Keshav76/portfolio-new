@@ -16,6 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { leetcode } from "../assets";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faIdCard } from "@fortawesome/free-regular-svg-icons";
 
 const Loader = () => {
   const { progress } = useProgress();
@@ -137,6 +138,13 @@ const Contact = () => {
             title="Leetcode"
           >
             <img src={leetcode} alt="" className="h-6 invert" />
+          </a>
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/1Z_XG1jP7ONF8Pft1V20ZVY_mYdWGa8yj/view?usp=sharing"
+            title="Resume"
+          >
+            <FontAwesomeIcon icon={faIdCard} />
           </a>
         </motion.div>
         <motion.form
