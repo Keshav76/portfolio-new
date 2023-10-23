@@ -23,7 +23,7 @@ import {
   tensorflow,
   typescript,
 } from "../assets";
-import { yt, portfolio, ide, india, dark, chat } from "../assets";
+import { yt, portfolio, ide, india, chat } from "../assets";
 
 export const summary = `Skilled web developer. Specialized in constructing robust web
 applications using MERN Stack. Possesses a deep understanding of
