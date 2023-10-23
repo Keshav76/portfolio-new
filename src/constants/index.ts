@@ -1,4 +1,4 @@
-import { mern, frontend, ml, backend } from "../assets";
+import { mern, frontend, ml, backend, book } from "../assets";
 import { sas, srm } from "../assets";
 import { bhc, iitg, karo } from "../assets";
 import {
@@ -139,7 +139,7 @@ export const projects = [
     title: "Portfolio",
     description: "Built with React and Three.Js for 3D animations",
     githubLink: "https://github.com/Keshav76/portfolio-new",
-    liveDemoLink: "https://kb-portfolio-two.vercel.app/",
+    liveDemoLink: "https://keshav-banka.vercel.app/",
     image: portfolio,
   },
   {
@@ -155,7 +155,7 @@ export const projects = [
     description:
       "A secure chat application built with React and Firebase using RSA encryption",
     githubLink: "https://github.com/Keshav76/chit-chat",
-    liveDemoLink: "https://chit-chat-10qe.onrender.com/",
+    liveDemoLink: "https://kb-chit-chat.vercel.app/",
     image: chat,
   },
   {
@@ -174,10 +174,10 @@ export const projects = [
     image: india,
   },
   {
-    title: "Dark Mode Chrome Extension",
-    description: "A chrome extension for dark mode built with Javascript",
-    githubLink: "https://github.com/Keshav76/Dark-Mode-Chrome-Extension",
-    liveDemoLink: "",
-    image: dark,
+    title: "Book Recommender System",
+    description: "Collaborative Filtering based Book Recommender System",
+    githubLink: "https://github.com/Keshav76/Book-Recommender-System",
+    liveDemoLink: "https://kb-book-recommender.onrender.com",
+    image: book,
   },
 ];

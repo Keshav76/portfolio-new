@@ -7,11 +7,11 @@ const Main = () => {
   return (
     <div
       id="home"
-      className="relative w-full mt-12 h-[calc(100vh-48px)] bg-[url('./src/assets/herobg.png')] bg-cover bg-no-repeat"
+      className="relative w-full mt-12 h-[calc(100vh-48px)] bg-[url('../src/assets/herobg.png')] bg-cover bg-no-repeat"
     >
       {/* Name */}
       <motion.div
-        variants={slideIn("left", "tween", 0.5, 1)}
+        variants={slideIn("left", "tween", 0, 1)}
         className="flex px-10 md:py-10 py-4 gap-4"
       >
         <div className="flex flex-col items-center">

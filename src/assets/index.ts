@@ -43,8 +43,10 @@ import india from "./projects/india.png";
 import dark from "./projects/dark.png";
 import chat from "./projects/chat.png";
 import interview from "./projects/interview.png";
+import book from "./projects/book.png";
 
 export {
+  book,
   ide,
   chat,
   pandas,
