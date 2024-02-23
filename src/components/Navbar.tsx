@@ -9,37 +9,37 @@ const NavLinks = () => {
   return (
     <>
       <a
-        className="hover:text-shiny hover:bg-[rgb(255,255,255,0.1)] py-1 px-4 rounded-xl"
+        className="hover:text-shiny py-1 px-4 rounded-xl"
         href="#home"
       >
         Home
       </a>
       <a
-        className="hover:text-shiny hover:bg-[rgb(255,255,255,0.1)] py-1 px-4 rounded-xl"
+        className="hover:text-shiny py-1 px-4 rounded-xl"
         href="#education"
       >
         Education
       </a>
       <a
-        className="hover:text-shiny hover:bg-[rgb(255,255,255,0.1)] py-1 px-4 rounded-xl"
+        className="hover:text-shiny py-1 px-4 rounded-xl"
         href="#experience"
       >
         Experience
       </a>
       <a
-        className="hover:text-shiny hover:bg-[rgb(255,255,255,0.1)] py-1 px-4 rounded-xl"
+        className="hover:text-shiny py-1 px-4 rounded-xl"
         href="#skills"
       >
         Skills
       </a>
       <a
-        className="hover:text-shiny hover:bg-[rgb(255,255,255,0.1)] py-1 px-4 rounded-xl"
+        className="hover:text-shiny py-1 px-4 rounded-xl"
         href="#projects"
       >
         Projects
       </a>
       <a
-        className="hover:text-shiny hover:bg-[rgb(255,255,255,0.1)] py-1 px-4 rounded-xl"
+        className="hover:text-shiny py-1 px-4 rounded-xl"
         href="#contact"
       >
         Contact
